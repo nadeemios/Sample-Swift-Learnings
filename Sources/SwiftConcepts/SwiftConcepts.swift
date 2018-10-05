@@ -1,3 +1,3 @@
 struct SwiftConcepts {
-    var text = "Hello, World!"
+   static var text = "Hello, Nadeem Bhai!"
 }
