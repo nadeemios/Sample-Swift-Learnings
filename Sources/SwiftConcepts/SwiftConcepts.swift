@@ -5,13 +5,13 @@ static var text = "Hello, Nadeem Bhai!"
 
 /// We could create an array of purchasable, if all elements inside the array were equatable.
 /// that's the Conditional Conformance
-protocol Purchasable {
+public protocol Purchasable {
 func buy()
 }
 
-struct Book:Purchasable {
+public struct Book:Purchasable {
 var name:String
-func buy() {
+public func buy() {
 print("Bought \(name) book")
 }
 }
