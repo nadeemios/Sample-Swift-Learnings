@@ -10,7 +10,7 @@ func buy()
 }
 
 public struct Book:Purchasable {
-var name:String
+public var name:String
 public func buy() {
 print("Bought \(name) book")
 }
