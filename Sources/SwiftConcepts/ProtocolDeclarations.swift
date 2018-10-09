@@ -31,3 +31,13 @@ public  func startsWith(_ item:Item)->Bool {
 return count >= 1 && self[0] == item
 }
 }
+
+/// extensions with generics where clause brings a great feature inside your code
+///protocol inheritance brings great features to use generic requirements
+protocol SuffixableContainer:Container {
+/// above the first thing it must conform to Suffizable Container and its item must be the same as the containers item type
+associatedtype Suffix:SuffixableContainer where Suffix.Item == Item
+func suffix(_ size:Int)->Suffix
+}
+
+
