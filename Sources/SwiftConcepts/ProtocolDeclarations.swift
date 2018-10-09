@@ -25,3 +25,9 @@ extension Container where Item == Double {
     return sum / Double(count)
     }
 }
+/// protocol extensions using generic where clause items requires to conform to some protocl
+extension Container where Item:Equatable {
+public  func startsWith(_ item:Item)->Bool {
+return count >= 1 && self[0] == item
+}
+}
